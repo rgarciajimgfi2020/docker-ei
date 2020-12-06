@@ -5,7 +5,7 @@ services:
     container_name: wso2ei-mysql
     hostname: wso2ei-mysql
     ports:
-      - 3306
+      - 3306:3306
     environment:
         MYSQL_ROOT_PASSWORD: root
     volumes:
