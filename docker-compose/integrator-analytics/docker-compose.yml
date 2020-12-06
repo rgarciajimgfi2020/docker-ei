@@ -12,7 +12,7 @@ services:
       # mounting MySQL init scripts
       - ./mysql/scripts:/docker-entrypoint-initdb.d
       # mounting MySQL DB data
-    #   - ./mysql/data:/var/lib/mysql
+      - ./mysql/data:/var/lib/mysql
     # healthcheck:
     #   test: ["CMD", "mysqladmin" ,"ping", "-uroot", "-proot"]
     #   interval: 5s
