@@ -2,8 +2,8 @@ version: '3.1'
 services:
   wso2ei-mysql:
     image: mysql:5.7.20
-    # container_name: wso2ei-mysql
-    # hostname: wso2ei-mysql
+    container_name: wso2ei-mysql
+    hostname: wso2ei-mysql
     ports:
       - 3306
     environment:
@@ -21,8 +21,8 @@ services:
     #   start_period: 10s
   wso2ei-analytics:
     image: docker.wso2.com/wso2ei-analytics:6.2.0
-    # container_name: wso2ei-analytics
-    # hostname: wso2ei-analytics
+    container_name: wso2ei-analytics
+    hostname: wso2ei-analytics
     ports:
       - 9444:9444
       - 9612:9612
