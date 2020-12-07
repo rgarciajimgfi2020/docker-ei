@@ -60,7 +60,7 @@ services:
     volumes:
       # mounting configurations
       - ./integrator:/home/wso2carbon/volumes/
-      - ./server:/home/wso2carbon/wso2ei-6.2.0/repository/deployment/server/
+      # - ./server:/home/wso2carbon/wso2ei-6.2.0/repository/deployment/server/
     # depends_on:
     #   wso2ei-mysql:
     #     condition: service_healthy
