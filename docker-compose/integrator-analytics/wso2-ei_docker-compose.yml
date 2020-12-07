@@ -80,4 +80,4 @@ volumes:
     driver_opts:
       type: "nfs"
       o: "addr=10.0.1.4,nolock,soft,rw"
-      device: ":/home/"
+      device: ":/home/wso2carbon/wso2ei-6.2.0/repository/deployment/server/"
