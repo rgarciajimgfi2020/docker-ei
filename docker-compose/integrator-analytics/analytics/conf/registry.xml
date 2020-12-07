@@ -43,7 +43,7 @@
         <readOnly>false</readOnly>
         <registryRoot>/</registryRoot>
         <enableCache>true</enableCache>
-        <cacheId>root@jdbc:mysql://wso2ei-6.2.0:3306/WSO2_REGISTRY_DB</cacheId>
+        <cacheId>root@jdbc:mysql://10.0.1.4:3306/WSO2_REGISTRY_DB</cacheId>
     </remoteInstance>
 
     <mount path="/_system/config" overwrite="virtual">
