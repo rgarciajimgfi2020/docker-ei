@@ -58,9 +58,15 @@ services:
     #   retries: 10
     #   start_period: 60s
     volumes:
-      # mounting configurations
+      # mounting configurations 
       - ./integrator:/home/wso2carbon/volumes/
+      # https://stackoverflow.com/questions/45282608/how-to-directly-mount-nfs-share-volume-in-container-using-docker-compose-v3
       # - ./server:/home/wso2carbon/wso2ei-6.2.0/repository/deployment/server/
+      - type: volume
+        source: example
+        target: /nfs
+        volume:
+          nocopy: true
     # depends_on:
     #   wso2ei-mysql:
     #     condition: service_healthy
@@ -69,3 +75,9 @@ services:
     # links:
     #   - wso2ei-mysql
     #   - wso2ei-analytics
+volumes:
+  example:
+    driver_opts:
+      type: "nfs"
+      o: "addr=10.0.1.4,nolock,soft,rw"
+      device: ":/home/"
