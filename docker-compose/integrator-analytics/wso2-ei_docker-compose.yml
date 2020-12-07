@@ -75,9 +75,9 @@ services:
     # links:
     #   - wso2ei-mysql
     #   - wso2ei-analytics
-volumes:
-  example:
-    driver_opts:
-      type: "nfs"
-      o: "addr=10.0.1.4,nolock,soft,rw"
-      device: ":/home/wso2carbon/wso2ei-6.2.0/repository/deployment/server/"
+  volumes:
+    example:
+      driver_opts:
+        type: "nfs"
+        o: "addr=10.0.1.4,nolock,soft,rw"
+        device: ":/home/wso2carbon/wso2ei-6.2.0/repository/deployment/server/"
