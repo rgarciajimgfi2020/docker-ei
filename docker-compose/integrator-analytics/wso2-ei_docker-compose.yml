@@ -46,7 +46,7 @@ services:
   wso2ei-integrator:
     image: docker.wso2.com/wso2ei-integrator:6.2.0
     container_name: wso2ei-integrator
-    hostname: wso2ei-integrator
+    # hostname: wso2ei-integrator
     ports:
       - 9443:9443
       - 8243:8243
