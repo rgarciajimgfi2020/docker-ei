@@ -492,7 +492,7 @@
      getting this node to join the cluster.
      -->
     <clustering class="org.wso2.carbon.core.clustering.hazelcast.HazelcastClusteringAgent"
-                enable="false">
+                enable="true">
 
         <!-- Parameter to differentiate clustering mode, Default value will be "nonWorkerManager" in which
          case the all nodes of the cluster run schedule tasks-->
@@ -518,7 +518,7 @@
                     is deemed to have left the cluster, it will be detected by the Group Membership
                     Service (GMS) using a TCP ping mechanism.
         -->
-        <parameter name="membershipScheme">wka</parameter>
+        <parameter name="membershipScheme">multicast</parameter>
         <!--<parameter name="licenseKey">xxx</parameter>-->
         <!--<parameter name="mgtCenterURL">http://localhost:8081/mancenter/</parameter>-->
 
