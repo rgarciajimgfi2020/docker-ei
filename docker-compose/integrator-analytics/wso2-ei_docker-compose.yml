@@ -48,7 +48,7 @@ services:
     # container_name: wso2ei-integrator
     # hostname: wso2ei-integrator
     ports:
-      - 80:9443
+      - 9443:9443
       - 8243:8243
       - 8280:8280
     # healthcheck:
