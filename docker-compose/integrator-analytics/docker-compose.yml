@@ -24,7 +24,7 @@ services:
     # container_name: wso2ei-analytics
     # hostname: wso2ei-analytics
     ports:
-      - 443:9444
+      - 9444:9444
       - 9612:9612
       - 9712:9712
       - 7612:7612
