@@ -25,7 +25,6 @@ services:
     # hostname: wso2ei-analytics
     ports:
       - 9444:9444
-      - 9764:9764
       - 9612:9612
       - 9712:9712
       - 7612:7612
